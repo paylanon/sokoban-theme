@@ -194,13 +194,20 @@
 
    ;; highlight numbers
    `(highlight-numbers-number ((t (:foreground ,numbers))))
-  )
+
+   ;; diredfl
+   `(diredfl-dir-heading ((t (:foreground ,text :background ,background))))
+   `(diredfl-file-name ((t (:foreground ,sokoban-theme-blue))))
+   `(diredfl-file-suffix((t (:foreground ,sokoban-theme-blue))))
+   `(diredfl-number ((t (:foreground ,keywords))))
+   `(diredfl-date-time ((t (:foreground ,line-fg))))
+
+
+  `(persp-face-lighter-buffer-not-in-persp ((t (:foreground ,background :background ,error)))))
 
   (custom-theme-set-variables
     'sokoban
-    '(linum-format " %5i ")
-  )
-)
+    '(linum-format " %5i ")))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path) load-file-name)
