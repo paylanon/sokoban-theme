@@ -86,14 +86,14 @@
       (selection  "#5f5f6e")
       (text       "#d1b897")
       (comments   "#869b85")
-      (punctuation "#8cde94")
+      (punctuation "#a1d19b")
       (keywords "#dddddd")
       (variables "#c1d1e3")
       (functions "#ffffff")
       (methods    "#c1d1e3")
       (strings    "#9bbfb6")
       (constants "#7ad0c6")
-      (macros "#8cde94")
+      (macros "#a1d19b")
       (numbers "#7ad0c6")
       (white     "#ffffff")
       (error "#c49191")
@@ -202,8 +202,7 @@
    `(diredfl-number ((t (:foreground ,keywords))))
    `(diredfl-date-time ((t (:foreground ,line-fg))))
 
-
-  `(persp-face-lighter-buffer-not-in-persp ((t (:foreground ,background :background ,error)))))
+   `(persp-face-lighter-buffer-not-in-persp ((t (:foreground ,background :background ,error)))))
 
   (custom-theme-set-variables
     'sokoban
