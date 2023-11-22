@@ -61,6 +61,12 @@
   :type 'string
   :group `sokoban-theme)
 
+(defcustom sokoban-theme-darkblue
+  "#006ab5"
+  "Primary colors - darkblue."
+  :type 'string
+  :group `sokoban-theme)
+
 (defcustom sokoban-theme-green
   "#D0DCB7"
   "Primary colors - green."
@@ -109,7 +115,7 @@
 
    `(default                          ((t (:foreground ,text :background ,background, :weight normal))))
    `(region                           ((t (:foreground nil :background ,selection))))
-   `(cursor                           ((t (:background ,white                        ))))
+   `(cursor                           ((t (:background ,keywords))))
    `(fringe                           ((t (:background ,background   :foreground ,white))))
    `(linum                            ((t (:background ,background :foreground ,gutter-fg))))
    `(highlight ((t (:foreground nil :background ,selection))))
@@ -171,11 +177,12 @@
 
    `(mode-line-inactive ((t (:inverse-video unspecified
                                             :underline unspecified
-                                            :foreground ,text
-                                            :background ,background
+                                            :foreground ,background
+                                            :background ,keywords
                                             :box nil))))
    `(powerline-inactive1 ((t (:background ,background :foreground ,text))))
    `(powerline-inactive2 ((t (:background ,background :foreground ,text))))
+   `(persp-face-lighter-buffer-not-in-persp ((t (:foreground ,background :background ,error))))
 
     ;; better compatibility with default DOOM mode-line
    `(error ((t (:foreground nil :weight normal))))
@@ -202,7 +209,19 @@
    `(diredfl-number ((t (:foreground ,keywords))))
    `(diredfl-date-time ((t (:foreground ,line-fg))))
 
-   `(persp-face-lighter-buffer-not-in-persp ((t (:foreground ,background :background ,error)))))
+   ;; avy
+   `(avy-lead-face ((t (:background ,sokoban-theme-darkblue, :foreground ,keywords))))
+
+  ;; vterm
+   `(vterm-color-red ((t (:foreground ,sokoban-theme-red :background ,sokoban-theme-red))))
+   `(vterm-color-blue ((t (:foreground ,sokoban-theme-blue :background ,sokoban-theme-blue))))
+   `(vterm-color-cyan ((t (:foreground ,sokoban-theme-cyan :background ,sokoban-theme-cyan))))
+   `(vterm-color-black ((t (:foreground ,background :background ,background))))
+   `(vterm-color-green ((t (:foreground ,sokoban-theme-green :background ,sokoban-theme-green))))
+   `(vterm-color-white ((t (:foreground ,keywords :background ,keywords))))
+   `(vterm-color-yellow ((t (:foreground ,sokoban-theme-yellow :background ,sokoban-theme-yellow))))
+   `(vterm-color-magenta ((t (:foreground ,sokoban-theme-magenta :background ,sokoban-theme-magenta)))))
+
 
   (custom-theme-set-variables
     'sokoban
