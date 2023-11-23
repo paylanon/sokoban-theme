@@ -13,7 +13,7 @@
 ;; License: GPL-3+
 ;;; Commentary:
 
-;; Dark-mode, low-sat version of the palette used on Jonathan Blow's programming livestreams.
+;; Refined version of the palette used on Jonathan Blow's early programming livestreams.
 ;; A modification of @nikav's naysayer-theme.
 
 ;;; Code:
@@ -84,10 +84,15 @@
   :type 'string
   :group `sokoban-theme)
 
-(let ((background "#191919")
-      (gutters    "#191919")
-      (gutter-fg  "#191919")
-      (gutters-active "#191919")
+;; (let ((background "#191919")
+;;       (gutters    "#191919")
+;;       (gutter-fg  "#191919")
+;;       (gutters-active "#191919"))
+
+(let ((background "#292929")
+      (gutters    "#292929")
+      (gutter-fg  "#292929")
+      (gutters-active "#292929")
       (builtin      "#ffffff")
       (selection  "#5f5f6e")
       (text       "#d1b897")
@@ -95,7 +100,7 @@
       (punctuation "#a1d19b")
       (keywords "#dddddd")
       (variables "#c1d1e3")
-      (functions "#ffffff")
+      (functions "#dac6ab")
       (methods    "#c1d1e3")
       (strings    "#9bbfb6")
       (constants "#7ad0c6")
@@ -104,7 +109,7 @@
       (white     "#ffffff")
       (error "#c49191")
       (warning "#ffaa00")
-      (highlight-line "#222222")
+      (highlight-line "#323232")
       (line-fg "#444444"))
 
   (custom-theme-set-faces
