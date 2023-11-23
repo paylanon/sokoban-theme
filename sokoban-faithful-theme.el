@@ -16,7 +16,7 @@
 ;; Refined version of the palette used on Jonathan Blow's early programming livestreams.
 ;; A fork of @nikav's naysayer-theme.
 
-;; ------ Variant: LEGACY (Default) ------
+;; ------ Variant: FAITHFUL ------
 
 ;;; Code:
 
@@ -86,10 +86,10 @@
   :type 'string
   :group `sokoban-theme)
 
-(let ((background "#292929")
-      (gutters    "#292929")
-      (gutter-fg  "#292929")
-      (gutters-active "#292929")
+(let ((background "#062626")
+      (gutters    "#062626")
+      (gutter-fg  "#062626")
+      (gutters-active "#062626")
       (builtin      "#ffffff")
       (selection  "#5f5f6e")
       (text       "#d1b897")
@@ -106,7 +106,7 @@
       (white     "#ffffff")
       (error "#c49191")
       (warning "#ffaa00")
-      (highlight-line "#323232")
+      (highlight-line "#072929")
       (line-fg "#444444"))
 
   (custom-theme-set-faces
@@ -209,7 +209,7 @@
    `(diredfl-file-name ((t (:foreground ,sokoban-theme-blue))))
    `(diredfl-file-suffix((t (:foreground ,sokoban-theme-blue))))
    `(diredfl-number ((t (:foreground ,keywords))))
-   `(diredfl-date-time ((t (:foreground ,line-fg))))
+   `(diredfl-date-time ((t (:foreground ,comments))))
 
    ;; avy
    `(avy-lead-face ((t (:background ,sokoban-theme-darkblue, :foreground ,keywords))))
