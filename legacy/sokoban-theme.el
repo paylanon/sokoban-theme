@@ -7,7 +7,7 @@
 ;; ((___ / / ((___/ / //    \ \ ((___/ / ((___/ / ((___( ( //   / /
 
 ;; Author: paylhorse <paylhorsegames@gmail.com>
-;; Version: 0.1.0
+;; Version: 0.1.1
 ;; Package-Requires: ((emacs "24"))
 ;; URL: https://github.com/paylhorse/sokoban-theme
 ;; License: GPL-3+
@@ -222,8 +222,12 @@
    `(vterm-color-green ((t (:foreground ,sokoban-theme-green :background ,sokoban-theme-green))))
    `(vterm-color-white ((t (:foreground ,keywords :background ,keywords))))
    `(vterm-color-yellow ((t (:foreground ,sokoban-theme-yellow :background ,sokoban-theme-yellow))))
-   `(vterm-color-magenta ((t (:foreground ,sokoban-theme-magenta :background ,sokoban-theme-magenta)))))
+   `(vterm-color-magenta ((t (:foreground ,sokoban-theme-magenta :background ,sokoban-theme-magenta))))
 
+   ;; git-gutter
+   `(git-gutter:added ((t (:foreground ,sokoban-theme-green :background ,background))))
+   `(git-gutter:deleted ((t (:foreground ,sokoban-theme-red :background ,background))))
+   `(git-gutter:modified ((t (:foreground ,sokoban-theme-magenta :background ,background)))))
 
   (custom-theme-set-variables
     'sokoban
