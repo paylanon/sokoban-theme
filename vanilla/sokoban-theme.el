@@ -92,7 +92,7 @@
       (gutters-active "#191919")
       (builtin      "#ffffff")
       (selection  "#5f5f6e")
-      (text       "#decdb6")
+      (text       "#ebe1d3")
       (comments   "#869b85")
       (punctuation "#a1d19b")
       (keywords "#dddddd")
@@ -120,7 +120,9 @@
    `(cursor                           ((t (:background ,keywords))))
    `(fringe                           ((t (:background ,background   :foreground ,white))))
    `(linum                            ((t (:background ,background :foreground ,gutter-fg))))
-   `(highlight ((t (:foreground nil :background ,selection))))
+   `(highlight                        ((t (:foreground nil :background ,selection))))
+   `(link                             ((t (:foreground ,keywords :background nil :underline t))))
+   `(success                          ((t (:foreground ,comments :background nil :weight bold))))
 
    ;; Font lock faces
    ;; *****************************************************************************
